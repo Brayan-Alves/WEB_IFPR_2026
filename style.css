@@ -1,0 +1,29 @@
+nav {
+    background-color: #99AD7A;
+    border-radius: 10px;
+    height: 60px;
+    border: 2px solid #546B41 ;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin: 10px;
+}
+
+.titulo{
+    color: #FFF8EC;
+}
+
+div {
+    display: flex;
+    height: 400px;
+}
+
+.imagem {
+    border: 2px solid #546B41;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.introducao {
+    flex: 1;
+}
