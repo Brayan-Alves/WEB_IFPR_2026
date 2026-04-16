@@ -2,8 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: #FFF8EC; 
+body { 
+    background: linear-gradient(-45deg, #a8e6cf, #dcedc1, #FFF8EC); /*faz dar um degrade
+    no fundo em vez de uma cor solida, de acordo com as cores que voce adicionar, e no sentido nesse
+    45deg = 45 graus ou seja na diagonal */
     font-family: 'Segoe UI';
     margin: 0; /*tirar a margem padrão que o navegador ja coloca*/
     color: #333;
@@ -53,6 +55,7 @@ nav {
 
 .introducao p {
     font-size: 18px;
+    line-height: 1.8;
 }
 
 .subtitulo {
@@ -138,7 +141,7 @@ nav {
     margin-bottom: 20px;
 }
 
-/* Estilo para os parágrafos dentro das seções */
+
 .col-texto p {
     font-size: 18px;
     line-height: 1.8;
