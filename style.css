@@ -1,29 +1,153 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFF8EC; 
+    font-family: 'Segoe UI';
+    margin: 0; /*tirar a margem padrão que o navegador ja coloca*/
+    color: #333;
+}
+
 nav {
     background-color: #99AD7A;
     border-radius: 10px;
     height: 60px;
     border: 2px solid #546B41 ;
     display: flex;
-    align-items: center;
-    padding-left: 10px;
-    margin: 10px;
+    align-items: center; /*centraliza verticalmente o conteúdo*/
+    padding-left: 20px; /*afasta o título apenas na esquerda*/
+    margin: 20px; /*afasta toda a nav da margem da tela*/
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /*cria uma sombra 0 é a posição horizontal 4px 
+    é o vertical, 6px eh o desfoque e rgba e para definir a cor (red, green, red, alpha)*/
 }
 
-.titulo{
+.titulo {
     color: #FFF8EC;
+    margin: 0;
 }
 
-div {
+.container-bio {
     display: flex;
-    height: 400px;
+    align-items: center; /*centraliza  verticalmente*/
+    justify-content: center; /*centraliza  horizontalmente*/
+    gap: 20px;  /*cria uma espaço entre os conteíudos*/   
+    padding: 40px 20px; /*da um espaço entre a caixa e o conteudo 40px no eixo y e 20px no eixo x*/
+    width: 800px;
+    margin: 0 auto; /*define margem de 0 no eixo Y e deixa automotico no eixo X*/
 }
 
 .imagem {
-    border: 2px solid #546B41;
-    border-radius: 10px;
+    border: 4px solid #546B41;
+    border-radius: 15px;
+    width: 250px;
+    height: auto; /*a partir da largura arruma a altura, para a foto n ficar esticada*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.introducao h2 {
+    color: #546B41;
+    font-size: 28px;
+    margin-bottom: 10px; /*cria espaço entre a caixa e borda do monitor só que apenas me baixo*/
+}
+
+.introducao p {
+    font-size: 18px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #546B41;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap; /*se a tela for pequena os blocos não couber lado a lado eles ficam em baixo*/
+}
+
+.card {
+    background-color: #99AD7A;
+    color: #FFF8EC;
+    border-radius: 12px;
+    width: 180px;
+    padding: 30px 20px; /*espaçamento interno*/
+    text-align: center;
+    display: flex;
+    flex-direction: column; /*deixa a foto e o texto em coluna um em cima do*/
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /*define que sempre que
+    o fundo ou a sombra muda tenha uma transição de 0.3s*/
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    background-color: #546B41;
+    transform: translateY(-10px); /*faz o cartão subir no eixo Y*/
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2); 
+    cursor: pointer;
+}
+
+.icone-card {
+    width: 50px;
+    height: auto;
+}
+
+.card-link {
+    text-decoration: none; /*remove o sublinhado*/
+    color: inherit;       /*mantem a cor padrão do texto*/
+}
+
+.secao-conteudo {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.row {
+    flex-direction: row; /*para as seções normais(primeiro texto depois foto)*/
+}
+
+.col-texto {
     flex: 1;
 }
 
-.introducao {
+.col-imagem {
     flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.col-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.col-texto h2 {
+    color: #546B41;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os parágrafos dentro das seções */
+.col-texto p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #546B41;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
 }

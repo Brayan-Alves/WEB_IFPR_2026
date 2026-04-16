@@ -7,14 +7,70 @@
     <title>Blog</title>
 </head>
 <body>
+
     <nav>
         <h1 class="titulo">Biografia</h1>
     </nav>
-    <div>
-        <img class="imagem" src="brayan1.jpg" alt="">
-        <p class="introducao"> Oi sla oq escrever sim talvez vou arrumar isso mais tarde lorem ipsum não sei oque mais</p>
-    </div>
+
+    <section class="container-bio">
+        <img class="imagem" src="brayan1.jpg">
+
+        <div class="introducao">
+            <h2>Olá, eu sou Brayan</h2>
+            <p>
+                Atualmente estou aprendendo desenvolvimento web com HTML e CSS. 
+                Este é um blog pessoal, da minha biografia onde contarei um pouco sobre
+                mim!
+            </p>
+        </div>
+
+    </section>
     
+    <h2 class="subtitulo">O que eu gosto</h2>
+
+    <section class="cards-container">
+        <a href="#secao-esporte" class="card-link">
+            <div class="card">
+                <img class="icone-card" src="volei.png">
+                <h3>Esporte</h3>
+            </div>
+        </a>
+        
+        <div class="card">
+            <img class="icone-card" src="musica.png">
+            <h3>Música</h3>
+        </div>
+        <div class="card">
+            <img class="icone-card" src="programacao.png">
+            <h3>Programação</h3>
+        </div>
+        <div class="card">
+            <img class="icone-card" src="gastronomia.png">
+            <h3>Gastronômicas</h3>
+        </div>
+    </section>
+
+    <section id="secao-esporte" class="secao-conteudo row">
+        <div class="col-texto">
+            <h2>Esporte</h2>
+            <p>
+                Bem, posso dizer que o esporte faz parte de grande parte da minha vida, e isso
+                sempre foi habitual na minha vida, desdê meus 5 anos praticava futubol, e por cerca dos
+                meus 12 anos parei de achar tão legal e nesse momento encontrei o volêi no qual
+                prático até os dias de hoje, e recentemente desenvolvi um apreço bem grande pelo atletismo,
+                acho muito legal a ideia de você poder práticar um esporte quando você quiser como a corrida,
+                diferente do volei onde você precisa de um grupo de pessoas uma bola boa, e uma quadra disponível.
+                Mas no geral eu amo esporte
+            </p>
+        </div>
+        <div class="col-imagem">
+            <img src="esporteA.jpg" alt="">
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2026 - Criado por Brayan</p>
+    </footer>
     
 </body>
 </html>
