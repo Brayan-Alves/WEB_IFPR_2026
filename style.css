@@ -1,3 +1,37 @@
+@media (max-width: 600px) {
+    .container-bio{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .cards-container {
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100px !important;
+        padding: 20px 10px;
+        display: flex;
+    }
+
+    .secao-conteudo {
+        flex-direction: column !important;
+        gap: 20px;
+    }
+
+    .col-texto h2{
+        text-align: center;
+    }
+
+    .col-texto p{
+        text-align: justify;
+        font-size: 16px;
+    }
+
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -6,6 +40,7 @@ body {
     background: linear-gradient(-45deg, #a8e6cf, #dcedc1, #FFF8EC); /*faz dar um degrade
     no fundo em vez de uma cor solida, de acordo com as cores que voce adicionar, e no sentido nesse
     45deg = 45 graus ou seja na diagonal */
+    background-size: 400% 400%;
     font-family: 'Segoe UI';
     margin: 0; /*tirar a margem padrão que o navegador ja coloca*/
     color: #333;
@@ -35,7 +70,8 @@ nav {
     justify-content: center; /*centraliza  horizontalmente*/
     gap: 20px;  /*cria uma espaço entre os conteíudos*/   
     padding: 40px 20px; /*da um espaço entre a caixa e o conteudo 40px no eixo y e 20px no eixo x*/
-    width: 800px;
+    max-width: 800px;
+    width: 90%;
     margin: 0 auto; /*define margem de 0 no eixo Y e deixa automotico no eixo X*/
 }
 
@@ -69,12 +105,14 @@ nav {
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    gap: 30px;
     flex-wrap: wrap; /*se a tela for pequena os blocos não couber lado a lado eles ficam em baixo*/
 }
 
 .card {
     background-color: #99AD7A;
     color: #FFF8EC;
+    border-top: 7px solid #546B41;
     border-radius: 12px;
     width: 180px;
     padding: 30px 20px; /*espaçamento interno*/
@@ -114,8 +152,8 @@ nav {
     gap: 40px;
 }
 
-.row {
-    flex-direction: row; /*para as seções normais(primeiro texto depois foto)*/
+.row-inverse {
+    flex-direction: row-reverse; /*para as seções normais(primeiro texto depois foto)*/
 }
 
 .col-texto {
